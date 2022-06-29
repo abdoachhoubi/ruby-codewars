@@ -1,4 +1,4 @@
-# This method turns cards with characters into an integer that representer their position in the playing cards
+# This method turns the letters of cards into an integer that represents their position in the playing cards
 def to_num char
    if char == 'T'
     10
@@ -26,7 +26,7 @@ def winner(deckSteve, deckJosh)
     # Iterating over `deckSteve` array
     deckSteve.each {|x|
 
-        # checking which one holds the biggest card at each iteration and adding one pint to the winner's score
+        # checking which one holds the biggest card at each iteration and adding one point to the winner's score
         if to_num(x) > to_num(deckJosh[i])
             scoreSteve += 1
         elsif to_num(x) < to_num(deckJosh[i])
